@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    line-height: 1.5;
+}
+
+ul.breadcrumb {
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 3%;
+    list-style: none;
+    }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    color: black;
+  }
+  ul.breadcrumb li a {
+    color: #f4bc5c;
+    text-decoration: none;
+  }
+  
+
+  ul.breadcrumb li a:hover {
+    color: #089544;
+    }
+    
+.wrapper{
+    padding-top: 2%;
+    max-width: 80%;
+    
+    background-color: rgb(247, 247, 247);
+}
+img{
+    width: 100%;
+    padding-left: 5%;
+    display: block;
+    
+}
+.img-display{
+    overflow:hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.6s ease;
+    
+}
+.img-showcase img{
+    min-width: 100%;
+    
+}
+.img-select{
+    display: flex;
+    margin-left: 3%;
+   
+}
+.img-item{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 1%;
+    
+}
+.img-item:hover{
+    opacity: 0.5;
+}
+.product-content{
+    padding-left: 5%;
+}
+.product-title{
+    
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6%;
+    width: 35%;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #089544;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #f4bc5c;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    padding-top: 6%;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+
+.price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-top:5% ;
+    padding-bottom: 5%;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0 7% 5% 0;
+    opacity: 0.8;
+}
+
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2% 2%;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #f4bc5c;
+}
+.purchase-info .btn:last-of-type{
+    background: #089544;
+}
+.purchase-info .btn:hover{
+    opacity: 0.7;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  #tabs ul li a {
+    background-color: #f4bc5c;
+    padding: 10px 46px;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    border-color: none;
+  }
+
+
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
